@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
     <header id="header">
-        <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="Original Trombones Logo"
-            id="header-img">
+        <div class="logo">
+            <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="Original Trombones Logo" id="header-img">
+        </div>
+
         <nav id="nav-bar">
             <ul>
                 <li><a href="#features" class="nav-link">Features</a></li>
@@ -24,12 +27,13 @@
     </header>
 
     <div class="container">
-
-        <h2><b>Handcrafted, home-made masterpieces</b></h2>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <input type="email" name="email" id="email" placeholder="Enter your email address" required="">
-            <input type="submit" value="Get Started" class="btn" id="submit">
-        </form>
+        <section id="get-form">
+            <h2><b>Handcrafted, home-made masterpieces</b></h2>
+            <form action="" id="form">
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required="">
+                <input type="submit" value="Get Started" class="btn" id="submit">
+            </form>
+        </section>
 
         <section id="features">
             <div class="grid">
@@ -38,8 +42,7 @@
                 </div>
                 <div class="desc">
                     <h2>Premium Materials</h2>
-                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity
-                        of your purchase.</p>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
                 </div>
             </div>
             <div class="grid">
@@ -48,8 +51,7 @@
                 </div>
                 <div class="desc">
                     <h2>Fast Shiping</h2>
-                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide
-                        free returns if you are not satisfied.</p>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
                 </div>
             </div>
             <div class="grid">
@@ -58,15 +60,13 @@
                 </div>
                 <div class="desc">
                     <h2>Quality Assurance</h2>
-                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and
-                        test the pitch of your instrument.</p>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
                 </div>
             </div>
         </section>
 
         <section id="how-it-works">
-            <iframe src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" frameborder="0"
-                id="video" height="315"></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" frameborder="0" id="video" height="315"></iframe>
         </section>
 
         <section id="pricing">
@@ -106,16 +106,15 @@
                 <button class="btn">Select</button>
             </div>
         </section>
-
-        <footer>
-            <ol>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Contact</a></li>
-            </ol>
-            <span>Copyright 2020, Fael Trombones</span>
-        </footer>
     </div>
+    <footer>
+        <span>Copyright 2020, Fael Trombones</span>
+        <ol>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ol>
+    </footer>
 </body>
 
 </html>
